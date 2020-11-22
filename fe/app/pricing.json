@@ -1,0 +1,97 @@
+{
+	"pricing":[
+		{
+			"name":"Bayi",
+			"prefix":"Rp",
+			"real_price":"Rp 19.900",
+			"big_price":"14",
+			"discount_price":"900",
+			"payment_type":"bln",
+			"how_many_customers":938,
+			"future":[
+				"<strong>0.5X Resource Power</strong>",
+				"<strong>500 MB</strong> Disk Space",
+				"<strong>Unlimited</strong> Bandwidth",
+				"<strong>Unlimited</strong> Databases",
+				"<strong>1</strong> Domain",
+				"<strong>Instant</strong> Backup",
+				"<strong>Unlimited</strong> SSL Gratis Selamanya"
+			],
+			"is_best_seller":false,
+			"discount":0
+		},
+		{
+			"name":"Pelajar",
+			"prefix":"Rp",
+			"real_price":"Rp 46.900",
+			"big_price":"23",
+			"discount_price":"450",
+			"payment_type":"bln",
+			"how_many_customers":4.168,
+			"future":[
+				"<strong>1X Resource Power</strong>",
+				"<strong>Unlimited</strong> Disk Space",
+				"<strong>Unlimited</strong> Bandwidth",
+				"<strong>Unlimited</strong> POP3 Email",
+				"<strong>Unlimited</strong> Databases",
+				"<strong>10</strong> Addon Domain",
+				"<strong>Instant</strong> Backup",
+				"<strong>Domain Gratis</strong> Selamanya",
+				"<strong>Unlimited</strong> SSL Gratis Selamanya"
+			],
+			"is_best_seller":false,
+			"discount":0
+		},
+		{
+			"name":"Personal",
+			"real_price":"Rp 58.000",
+			"prefix":"Rp",
+			"big_price":"38",
+			"discount_price":"000",
+			"payment_type":"bln",
+			"how_many_customers":10.017,
+			"future":[
+				"<strong>2X Resource Power</strong>",
+				"<strong>Unlimited</strong> Disk Space",
+				"<strong>Unlimited</strong> Bandwidth",
+				"<strong>Unlimited</strong> POP3 Email",
+				"<strong>Unlimited</strong> Databases",
+				"<strong>Unlimited</strong> Addon Domain",
+				"<strong>Instant</strong> Backup",
+				"<strong>Domain Gratis</strong> Selamanya",
+				"<strong>Unlimited</strong> SSL Gratis Selamanya",
+				"<strong>Private</strong> Name Server",
+				"<strong>SpamAssasin</strong> Mail Protection"
+
+			],
+			"is_best_seller":true,
+			"discount":0
+		},
+		{
+			"name":"Bisnis",
+			"prefix":"Rp",
+			"real_price":"Rp 109.900",
+			"big_price":"65",
+			"discount_price":"900",
+			"payment_type":"bln",
+			"how_many_customers":3.552,
+			"future":[
+				"<strong>3X Resource Power</strong>",
+				"<strong>Unlimited</strong> Disk Space",
+				"<strong>Unlimited</strong> Bandwidth",
+				"<strong>Unlimited</strong> POP3 Email",
+				"<strong>Unlimited</strong> Databases",
+				"<strong>Unlimited</strong> Addon Domain",
+				"<strong>Magic Auto</strong> Backup & Restore",
+				"<strong>Domain Gratis</strong> Selamanya",
+				"<strong>Unlimited</strong> SSL Gratis Selamanya",
+				"<strong>Private</strong> Name Server",
+				"<strong>Prioritas</strong> Layanan Support",
+				"<i class='zmdi zmdi-star blue-star'></i> <i class='zmdi zmdi-star blue-star'></i> <i class='zmdi zmdi-star blue-star'></i> <i class='zmdi zmdi-star blue-star'></i> <i class='zmdi zmdi-star blue-star'></i>",
+				"<strong>SpamAssasin</strong> Mail Protection"
+			],
+			"is_best_seller":false,
+			"discount":40
+		}
+	]
+}

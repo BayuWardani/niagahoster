@@ -1,0 +1,14 @@
+{
+    "name": "bayuwrdani/niagahoster",
+    "description": "a test",
+    "authors": [
+        {
+            "name": "Bayu Wardani",
+            "email": "bayuwardani51@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0",
+        "larapack/dd": "^1.1"
+    }
+}
