@@ -20,7 +20,7 @@ ini_set('error_log', dirname(__FILE__) . '/php_error.log');
 
 $protocol = isSSL() ? 'https' : 'http';
 //$url = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-$url = "http://test.bayuwardani.id".$_SERVER['REQUEST_URI'];
+$url = "http://127.0.0.1:8004".$_SERVER['REQUEST_URI'];
 $current_url = pathinfo($url, PATHINFO_DIRNAME);
 $root_url = str_replace('/install', '', $current_url) . '/';
 
