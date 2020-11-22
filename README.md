@@ -62,10 +62,7 @@ Setelah semua dijalankan anda sudah dapat menggunakan boxbilling dengan cara men
 2. Download Berkas / clone https://github.com/BayuWardani/niagahoster.git
   - extra folder
   - cd niagahoster/fe
-3. Ubah URL di -> boxbilling/install/index.php
-  - line 23
-  - ubah `http://127.0.0.1:8004` menjadi domain yang kalian gunakan
-4. Build App
+3. Build App
   Linux & Mac:
     - jalankan ./build.sh
   Windows:
