@@ -24,21 +24,22 @@
     - docker-compose up -d
     - docker ps
 5. Install BoxBilling
-  - masuk ke url yang digunakan untuk mengakses docker contoh : http://127.0.0.1:8004/boxbilling/install/index.php
-  - untuk Halaman Pertama Klik Next
-  - Untuk Halaman Kedua koneksi databases
-    # Host : db
-    # Databases Name : boxbilling
-    # Databases user : root
-    # Databases password : password
-    
-    jika ingin mengubah nama db dan password bisa buka `docker-compose.yml` dan ubah pada vairable MYSQL_DATABASE,MYSQL_ROOT_PASSWORD
-  - untuk halaman ke 3 isi informasi user admin
-    - nama : admin
-    - email : admin@email.com
-    - password : password
-  - setelah selesai langkah selanjutya adalah delete folder install di boxbilling
-  - ketik docker ps , dan ambil nilai dari CONTAINER_ID dari yang IMAGES boxbillingdocker_web
-  - lalu jalankan docker exec -it CONTAINER_ID rm -rf /var/www/html/boxbilling/install
+    - masuk ke url yang digunakan untuk mengakses docker contoh : http://127.0.0.1:8004/boxbilling/install/index.php
+    - untuk Halaman Pertama Klik Next
+    - Untuk Halaman Kedua koneksi databases
+
+        Host : db
+        Databases Name : boxbilling
+        Databases user : root
+        Databases password : password
+
+      jika ingin mengubah nama db dan password bisa buka `docker-compose.yml` dan ubah pada vairable MYSQL_DATABASE,MYSQL_ROOT_PASSWORD
+    - untuk halaman ke 3 isi informasi user admin
+        - nama : admin
+        - email : admin@email.com
+        - password : password
+    - setelah selesai langkah selanjutya adalah delete folder install di boxbilling
+    - ketik docker ps , dan ambil nilai dari CONTAINER_ID dari yang IMAGES boxbillingdocker_web
+    - lalu jalankan docker exec -it CONTAINER_ID rm -rf /var/www/html/boxbilling/install
 Setelah semua dijalankan anda sudah dapat menggunakan boxbilling dengan cara mengakses /boxbilling dari base url yang anda gunakan contoh : http://127.0.0.1:8004/boxbilling
     
