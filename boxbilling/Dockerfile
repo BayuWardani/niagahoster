@@ -8,8 +8,6 @@ RUN apk --no-cache add --repository http://dl-cdn.alpinelinux.org/alpine/edge/co
     nginx supervisor curl
 RUN apk update && apk add mysql-client && rm -f /var/cache/apk/*
 
-RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/bin --filename=composer 
-
 
 # Configure nginx
 COPY config/nginx.conf /etc/nginx/nginx.conf
@@ -17,10 +15,12 @@ RUN rm /etc/nginx/conf.d/default.conf
 COPY config/_php.ini /etc/php7/conf.d/custom.ini
 COPY config/php.ini /etc/php7/
 COPY config/supervisord.conf /etc/supervisor/conf.d/supervisord.conf
+COPY config/crontab.txt /crontab.txt
 
-RUN mkdir -p /var/www/html/boxbilling
+RUN /usr/bin/crontab /crontab.txt
+RUN mkdir -p /var/www/html/
 
-RUN chown -R nobody.nobody /var/www/html/boxbilling && \
+RUN chown -R nobody.nobody /var/www/html && \
   chown -R nobody.nobody /run && \
   chown -R nobody.nobody /var/www/html && \
   chown -R nobody.nobody /var/lib/nginx && \
@@ -29,9 +29,7 @@ RUN chown -R nobody.nobody /var/www/html/boxbilling && \
 
 USER nobody
 WORKDIR /var/www/html
-COPY  --chown=nobody boxbilling/ /var/www/html/boxbilling
-COPY --chown=nobody frontend/ /var/www/html
-RUN composer install
+COPY  --chown=nobody app/ /var/www/html
 
 EXPOSE 8004/tcp
 

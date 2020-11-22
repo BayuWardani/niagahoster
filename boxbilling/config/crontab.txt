@@ -1,0 +1,2 @@
+*/5 * * * * php /var/www/html/bb-cron.php
+
